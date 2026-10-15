@@ -1,3 +1,4 @@
+import random
 print("================================")
 print("       WELCOME TO QUIZMASTER")
 print("================================")
@@ -37,6 +38,7 @@ questions=[
     ]
 while replay:
     score=0
+    random.shuffle(questions)
     for i,q in enumerate(questions,start=1):
         print(f"Question {i}:{q['question']}")
         
